@@ -10454,42 +10454,59 @@
       <circ-port dir="in" pin="70,330" x="50" y="130"/>
       <circ-port dir="in" pin="70,50" x="50" y="60"/>
       <circ-port dir="in" pin="70,90" x="50" y="70"/>
-      <circ-port dir="out" pin="240,150" x="50" y="150"/>
-      <circ-port dir="out" pin="240,230" x="50" y="160"/>
-      <circ-port dir="out" pin="240,310" x="50" y="170"/>
+      <circ-port dir="out" pin="290,120" x="50" y="210"/>
+      <circ-port dir="out" pin="290,200" x="50" y="220"/>
+      <circ-port dir="out" pin="290,280" x="50" y="230"/>
       <circ-port dir="out" pin="290,40" x="50" y="200"/>
     </appear>
-    <comp lib="0" loc="(190,120)" name="Pull Resistor">
-      <a name="facing" val="east"/>
-    </comp>
-    <comp lib="0" loc="(190,40)" name="Pull Resistor">
-      <a name="facing" val="east"/>
-      <a name="pull" val="1"/>
-    </comp>
     <comp lib="0" loc="(240,100)" name="Power">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="0" loc="(240,150)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="Y2"/>
-      <a name="output" val="true"/>
+    <comp lib="0" loc="(240,130)" name="Transistor">
+      <a name="facing" val="north"/>
+      <a name="selloc" val="bl"/>
     </comp>
-    <comp lib="0" loc="(240,230)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="Y3"/>
-      <a name="output" val="true"/>
+    <comp lib="0" loc="(240,180)" name="Power">
+      <a name="facing" val="south"/>
     </comp>
-    <comp lib="0" loc="(240,310)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="Y4"/>
-      <a name="output" val="true"/>
+    <comp lib="0" loc="(240,210)" name="Transistor">
+      <a name="facing" val="north"/>
+      <a name="selloc" val="bl"/>
+    </comp>
+    <comp lib="0" loc="(240,260)" name="Power">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(240,290)" name="Transistor">
+      <a name="facing" val="north"/>
+      <a name="selloc" val="bl"/>
+    </comp>
+    <comp lib="0" loc="(240,340)" name="Power">
+      <a name="facing" val="south"/>
     </comp>
     <comp lib="0" loc="(240,50)" name="Transistor">
       <a name="facing" val="north"/>
       <a name="selloc" val="bl"/>
+    </comp>
+    <comp lib="0" loc="(290,120)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Y2"/>
+      <a name="output" val="true"/>
+      <a name="pull" val="down"/>
+    </comp>
+    <comp lib="0" loc="(290,200)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Y3"/>
+      <a name="output" val="true"/>
+      <a name="pull" val="down"/>
+    </comp>
+    <comp lib="0" loc="(290,280)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Y4"/>
+      <a name="output" val="true"/>
+      <a name="pull" val="down"/>
     </comp>
     <comp lib="0" loc="(290,40)" name="Pin">
       <a name="appearance" val="classic"/>
@@ -10530,16 +10547,16 @@
       <a name="appearance" val="classic"/>
       <a name="label" val="B1"/>
     </comp>
-    <comp lib="1" loc="(200,150)" name="XNOR Gate">
+    <comp lib="1" loc="(190,150)" name="XOR Gate">
       <a name="size" val="30"/>
     </comp>
-    <comp lib="1" loc="(200,230)" name="XNOR Gate">
+    <comp lib="1" loc="(190,230)" name="XOR Gate">
       <a name="size" val="30"/>
     </comp>
-    <comp lib="1" loc="(200,310)" name="XNOR Gate">
+    <comp lib="1" loc="(190,310)" name="XOR Gate">
       <a name="size" val="30"/>
     </comp>
-    <comp lib="1" loc="(200,70)" name="XNOR Gate">
+    <comp lib="1" loc="(190,70)" name="XOR Gate">
       <a name="size" val="30"/>
     </comp>
     <wire from="(100,130)" to="(100,140)"/>
@@ -10558,10 +10575,19 @@
     <wire from="(100,60)" to="(150,60)"/>
     <wire from="(100,80)" to="(100,90)"/>
     <wire from="(100,80)" to="(150,80)"/>
-    <wire from="(200,150)" to="(240,150)"/>
-    <wire from="(200,230)" to="(240,230)"/>
-    <wire from="(200,310)" to="(240,310)"/>
-    <wire from="(200,70)" to="(220,70)"/>
+    <wire from="(190,150)" to="(220,150)"/>
+    <wire from="(190,230)" to="(220,230)"/>
+    <wire from="(190,310)" to="(220,310)"/>
+    <wire from="(190,70)" to="(220,70)"/>
+    <wire from="(240,120)" to="(240,130)"/>
+    <wire from="(240,120)" to="(290,120)"/>
+    <wire from="(240,170)" to="(240,180)"/>
+    <wire from="(240,200)" to="(240,210)"/>
+    <wire from="(240,200)" to="(290,200)"/>
+    <wire from="(240,250)" to="(240,260)"/>
+    <wire from="(240,280)" to="(240,290)"/>
+    <wire from="(240,280)" to="(290,280)"/>
+    <wire from="(240,330)" to="(240,340)"/>
     <wire from="(240,40)" to="(240,50)"/>
     <wire from="(240,40)" to="(290,40)"/>
     <wire from="(240,90)" to="(240,100)"/>
