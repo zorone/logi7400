@@ -17,7 +17,7 @@
       <a name="facing" val="west"/>
     </tool>
     <tool name="Pull Resistor">
-      <a name="facing" val="west"/>
+      <a name="facing" val="north"/>
       <a name="pull" val="1"/>
     </tool>
     <tool name="Clock">
@@ -107,6 +107,34 @@
     <a name="circuit" val="README"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(430,220)" name="Pull Resistor">
+      <a name="facing" val="west"/>
+      <a name="pull" val="1"/>
+    </comp>
+    <comp lib="0" loc="(430,240)" name="Pull Resistor">
+      <a name="facing" val="west"/>
+      <a name="pull" val="1"/>
+    </comp>
+    <comp lib="0" loc="(430,260)" name="Pull Resistor">
+      <a name="facing" val="west"/>
+      <a name="pull" val="1"/>
+    </comp>
+    <comp lib="0" loc="(430,280)" name="Pull Resistor">
+      <a name="facing" val="west"/>
+      <a name="pull" val="1"/>
+    </comp>
+    <comp lib="0" loc="(430,350)" name="Pull Resistor">
+      <a name="facing" val="west"/>
+      <a name="pull" val="1"/>
+    </comp>
+    <comp lib="0" loc="(430,370)" name="Pull Resistor">
+      <a name="facing" val="west"/>
+      <a name="pull" val="1"/>
+    </comp>
+    <comp lib="0" loc="(430,390)" name="Pull Resistor">
+      <a name="facing" val="west"/>
+      <a name="pull" val="1"/>
+    </comp>
     <comp lib="5" loc="(110,340)" name="DipSwitch">
       <a name="number" val="4"/>
     </comp>
@@ -149,13 +177,25 @@
     <wire from="(320,370)" to="(350,370)"/>
     <wire from="(330,310)" to="(330,360)"/>
     <wire from="(330,360)" to="(340,360)"/>
+    <wire from="(340,220)" to="(340,260)"/>
+    <wire from="(340,220)" to="(430,220)"/>
     <wire from="(340,260)" to="(340,290)"/>
     <wire from="(340,350)" to="(340,360)"/>
+    <wire from="(340,360)" to="(430,360)"/>
+    <wire from="(350,240)" to="(350,250)"/>
+    <wire from="(350,240)" to="(430,240)"/>
     <wire from="(350,250)" to="(350,290)"/>
     <wire from="(350,350)" to="(350,370)"/>
+    <wire from="(350,370)" to="(430,370)"/>
+    <wire from="(360,260)" to="(360,270)"/>
+    <wire from="(360,260)" to="(430,260)"/>
     <wire from="(360,270)" to="(360,290)"/>
     <wire from="(360,350)" to="(360,380)"/>
+    <wire from="(360,380)" to="(360,390)"/>
+    <wire from="(360,390)" to="(430,390)"/>
     <wire from="(370,280)" to="(370,290)"/>
+    <wire from="(370,280)" to="(430,280)"/>
+    <wire from="(430,350)" to="(430,360)"/>
     <wire from="(60,270)" to="(180,270)"/>
     <wire from="(60,270)" to="(60,340)"/>
     <wire from="(70,280)" to="(180,280)"/>
