@@ -10652,18 +10652,25 @@
       <text dominant-baseline="alphabetic" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="100" y="121">Vout</text>
       <circ-anchor facing="east" x="160" y="100"/>
       <circ-port dir="in" pin="190,210" x="60" y="100"/>
-      <circ-port dir="out" pin="280,150" x="110" y="130"/>
+      <circ-port dir="out" pin="250,150" x="110" y="130"/>
       <circ-port dir="out" pin="370,210" x="160" y="100"/>
     </appear>
     <comp lib="0" loc="(190,210)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="Vcc"/>
     </comp>
-    <comp lib="0" loc="(280,150)" name="Pin">
+    <comp lib="0" loc="(250,150)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
       <a name="label" val="LED"/>
       <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(250,260)" name="Pull Resistor">
+      <a name="facing" val="north"/>
+      <a name="pull" val="1"/>
+    </comp>
+    <comp lib="0" loc="(330,260)" name="Pull Resistor">
+      <a name="facing" val="north"/>
     </comp>
     <comp lib="0" loc="(370,210)" name="Pin">
       <a name="appearance" val="classic"/>
@@ -10671,8 +10678,13 @@
       <a name="label" val="GND"/>
       <a name="output" val="true"/>
     </comp>
-    <wire from="(190,210)" to="(280,210)"/>
-    <wire from="(280,150)" to="(280,210)"/>
-    <wire from="(280,210)" to="(370,210)"/>
+    <comp lib="1" loc="(300,210)" name="Buffer"/>
+    <wire from="(190,210)" to="(250,210)"/>
+    <wire from="(250,150)" to="(250,210)"/>
+    <wire from="(250,210)" to="(250,260)"/>
+    <wire from="(250,210)" to="(280,210)"/>
+    <wire from="(300,210)" to="(330,210)"/>
+    <wire from="(330,210)" to="(330,260)"/>
+    <wire from="(330,210)" to="(370,210)"/>
   </circuit>
 </project>
