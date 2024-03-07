@@ -10702,6 +10702,7 @@
     <comp lib="0" loc="(190,210)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="Vcc"/>
+      <a name="pull" val="up"/>
     </comp>
     <comp lib="0" loc="(250,150)" name="Pin">
       <a name="appearance" val="classic"/>
