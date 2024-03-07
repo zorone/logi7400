@@ -103,7 +103,9 @@
       <a name="text" val="This library is licenced under the GNU Lesser General Public Licence version 3."/>
     </comp>
     <comp loc="(300,230)" name="DIP_74266"/>
-    <comp loc="(480,260)" name="polarizedLED"/>
+    <comp loc="(460,260)" name="polarizedLED">
+      <a name="facing" val="west"/>
+    </comp>
     <wire from="(300,240)" to="(310,240)"/>
     <wire from="(300,250)" to="(350,250)"/>
     <wire from="(300,260)" to="(460,260)"/>
@@ -112,7 +114,6 @@
     <wire from="(350,220)" to="(350,250)"/>
     <wire from="(350,220)" to="(360,220)"/>
     <wire from="(470,260)" to="(470,300)"/>
-    <wire from="(470,260)" to="(480,260)"/>
     <wire from="(480,260)" to="(550,260)"/>
   </circuit>
   <circuit name="DIP_7400">
@@ -10645,17 +10646,18 @@
     <a name="clabelup" val="west"/>
     <a name="simulationFrequency" val="1.0"/>
     <appear>
-      <polyline fill="none" points="120,130 120,150" stroke="#000000" stroke-width="2"/>
-      <polygon points="140,130 120,140 140,150" stroke="#000000"/>
+      <polyline fill="none" points="140,130 140,150" stroke="#000000" stroke-width="2"/>
+      <polygon points="140,140 120,130 120,150" stroke="#000000"/>
       <circ-anchor facing="east" x="140" y="140"/>
-      <circ-port dir="in" pin="250,150" x="120" y="140"/>
-      <circ-port dir="in" pin="310,210" x="140" y="140"/>
-      <circ-port dir="out" pin="190,210" x="130" y="140"/>
+      <circ-port dir="in" pin="190,210" x="120" y="140"/>
+      <circ-port dir="in" pin="250,150" x="140" y="140"/>
+      <circ-port dir="out" pin="310,210" x="130" y="140"/>
     </appear>
     <comp lib="0" loc="(190,210)" name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="label" val="LED"/>
-      <a name="output" val="true"/>
+      <a name="label" val="Vcc"/>
+      <a name="pull" val="up"/>
+      <a name="tristate" val="true"/>
     </comp>
     <comp lib="0" loc="(250,150)" name="Pin">
       <a name="appearance" val="classic"/>
@@ -10667,9 +10669,8 @@
     <comp lib="0" loc="(310,210)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="Vcc"/>
-      <a name="pull" val="up"/>
-      <a name="tristate" val="true"/>
+      <a name="label" val="LED"/>
+      <a name="output" val="true"/>
     </comp>
     <wire from="(190,210)" to="(230,210)"/>
     <wire from="(250,150)" to="(250,190)"/>
