@@ -11151,19 +11151,15 @@
       <a name="appearance" val="classic"/>
     </comp>
     <wire from="(110,140)" to="(110,160)"/>
-    <wire from="(110,160)" to="(130,160)"/>
+    <wire from="(110,160)" to="(160,160)"/>
     <wire from="(120,180)" to="(120,200)"/>
     <wire from="(120,180)" to="(130,180)"/>
     <wire from="(120,60)" to="(120,80)"/>
     <wire from="(120,80)" to="(160,80)"/>
-    <wire from="(130,140)" to="(130,160)"/>
-    <wire from="(130,160)" to="(130,180)"/>
-    <wire from="(130,160)" to="(160,160)"/>
-    <wire from="(140,110)" to="(160,110)"/>
+    <wire from="(130,140)" to="(130,180)"/>
+    <wire from="(140,110)" to="(180,110)"/>
     <wire from="(140,130)" to="(180,130)"/>
-    <wire from="(160,110)" to="(160,160)"/>
-    <wire from="(160,110)" to="(180,110)"/>
-    <wire from="(160,80)" to="(160,110)"/>
+    <wire from="(160,80)" to="(160,160)"/>
     <wire from="(180,130)" to="(180,160)"/>
     <wire from="(180,160)" to="(200,160)"/>
     <wire from="(180,80)" to="(180,110)"/>
@@ -11616,15 +11612,21 @@
     <wire from="(80,80)" to="(80,120)"/>
   </circuit>
   <circuit name="DIP_7495">
-    <a name="appearance" val="evolution"/>
+    <a name="appearance" val="custom"/>
     <a name="circuit" val="DIP_7495"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(300,50)" name="Pin">
+    <comp lib="0" loc="(370,50)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
     </comp>
     <comp lib="0" loc="(40,160)" name="Pin">
+      <a name="appearance" val="classic"/>
+    </comp>
+    <comp lib="0" loc="(40,330)" name="Pin">
+      <a name="appearance" val="classic"/>
+    </comp>
+    <comp lib="0" loc="(40,390)" name="Pin">
       <a name="appearance" val="classic"/>
     </comp>
     <comp lib="0" loc="(40,90)" name="Pin">
@@ -11643,21 +11645,16 @@
     <comp lib="1" loc="(160,90)" name="NOT Gate">
       <a name="size" val="20"/>
     </comp>
-    <comp lib="1" loc="(190,450)" name="AND Gate">
+    <comp lib="1" loc="(170,320)" name="AND Gate">
       <a name="size" val="30"/>
     </comp>
-    <comp lib="1" loc="(190,530)" name="OR Gate">
+    <comp lib="1" loc="(170,380)" name="AND Gate">
       <a name="size" val="30"/>
     </comp>
-    <comp lib="1" loc="(210,210)" name="AND Gate">
-      <a name="facing" val="south"/>
+    <comp lib="1" loc="(240,350)" name="OR Gate">
       <a name="size" val="30"/>
     </comp>
     <comp lib="1" loc="(240,460)" name="AND Gate">
-      <a name="facing" val="south"/>
-      <a name="size" val="30"/>
-    </comp>
-    <comp lib="1" loc="(250,290)" name="NOR Gate">
       <a name="facing" val="south"/>
       <a name="size" val="30"/>
     </comp>
@@ -11665,40 +11662,81 @@
       <a name="facing" val="south"/>
       <a name="size" val="30"/>
     </comp>
-    <comp lib="1" loc="(290,210)" name="AND Gate">
+    <comp lib="1" loc="(280,210)" name="AND Gate">
       <a name="facing" val="south"/>
       <a name="size" val="30"/>
     </comp>
-    <comp lib="4" loc="(270,330)" name="S-R Flip-Flop">
-      <a name="appearance" val="evolution"/>
+    <comp lib="1" loc="(320,290)" name="NOR Gate">
+      <a name="facing" val="south"/>
+      <a name="size" val="30"/>
     </comp>
+    <comp lib="1" loc="(360,210)" name="AND Gate">
+      <a name="facing" val="south"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp loc="(400,380)" name="SR_Flip_Flop"/>
     <wire from="(100,90)" to="(120,90)"/>
-    <wire from="(120,120)" to="(220,120)"/>
+    <wire from="(120,120)" to="(120,310)"/>
+    <wire from="(120,120)" to="(290,120)"/>
+    <wire from="(120,310)" to="(140,310)"/>
     <wire from="(120,90)" to="(120,120)"/>
     <wire from="(120,90)" to="(140,90)"/>
-    <wire from="(160,90)" to="(280,90)"/>
-    <wire from="(200,160)" to="(200,180)"/>
-    <wire from="(210,210)" to="(210,230)"/>
-    <wire from="(210,230)" to="(240,230)"/>
-    <wire from="(220,120)" to="(220,180)"/>
-    <wire from="(220,120)" to="(320,120)"/>
-    <wire from="(240,230)" to="(240,250)"/>
-    <wire from="(260,230)" to="(260,250)"/>
-    <wire from="(260,230)" to="(290,230)"/>
-    <wire from="(280,90)" to="(280,180)"/>
-    <wire from="(280,90)" to="(510,90)"/>
-    <wire from="(290,210)" to="(290,230)"/>
-    <wire from="(300,50)" to="(300,180)"/>
-    <wire from="(40,160)" to="(200,160)"/>
+    <wire from="(160,90)" to="(350,90)"/>
+    <wire from="(170,320)" to="(190,320)"/>
+    <wire from="(170,380)" to="(190,380)"/>
+    <wire from="(190,320)" to="(190,340)"/>
+    <wire from="(190,340)" to="(210,340)"/>
+    <wire from="(190,360)" to="(190,380)"/>
+    <wire from="(190,360)" to="(210,360)"/>
+    <wire from="(270,160)" to="(270,180)"/>
+    <wire from="(280,210)" to="(280,230)"/>
+    <wire from="(280,230)" to="(310,230)"/>
+    <wire from="(290,120)" to="(290,180)"/>
+    <wire from="(290,120)" to="(390,120)"/>
+    <wire from="(310,230)" to="(310,250)"/>
+    <wire from="(330,230)" to="(330,250)"/>
+    <wire from="(330,230)" to="(360,230)"/>
+    <wire from="(350,90)" to="(350,180)"/>
+    <wire from="(350,90)" to="(510,90)"/>
+    <wire from="(360,210)" to="(360,230)"/>
+    <wire from="(370,50)" to="(370,180)"/>
+    <wire from="(40,160)" to="(270,160)"/>
+    <wire from="(40,330)" to="(140,330)"/>
+    <wire from="(40,390)" to="(140,390)"/>
     <wire from="(40,90)" to="(60,90)"/>
-    <wire from="(60,90)" to="(60,100)"/>
+    <wire from="(60,370)" to="(140,370)"/>
+    <wire from="(60,90)" to="(60,370)"/>
     <wire from="(60,90)" to="(80,90)"/>
   </circuit>
   <circuit name="SR_Flip_Flop">
-    <a name="appearance" val="evolution"/>
+    <a name="appearance" val="custom"/>
     <a name="circuit" val="SR_Flip_Flop"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="60" y="105">1R</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="60" y="65">1S</text>
+      <rect fill="none" height="60" stroke="#000000" stroke-width="2" width="40" x="50" y="50"/>
+      <polyline fill="none" points="50,76 62,80 50,84" stroke="#000000"/>
+      <circ-anchor facing="east" x="90" y="60"/>
+      <circ-port dir="in" pin="120,200" x="70" y="110"/>
+      <circ-port dir="in" pin="120,60" x="70" y="50"/>
+      <circ-port dir="in" pin="60,120" x="50" y="80"/>
+      <circ-port dir="in" pin="60,160" x="50" y="100"/>
+      <circ-port dir="in" pin="60,80" x="50" y="60"/>
+      <circ-port dir="out" pin="200,160" x="90" y="100"/>
+      <circ-port dir="out" pin="200,80" x="90" y="60"/>
+    </appear>
+    <comp lib="0" loc="(120,200)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="CLR"/>
+    </comp>
+    <comp lib="0" loc="(120,60)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="SET"/>
+    </comp>
     <comp lib="0" loc="(200,160)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
@@ -11723,13 +11761,19 @@
       <a name="appearance" val="classic"/>
       <a name="label" val="S"/>
     </comp>
-    <comp lib="4" loc="(140,110)" name="S-R Flip-Flop">
+    <comp lib="4" loc="(140,110)" name="J-K Flip-Flop">
       <a name="appearance" val="classic"/>
     </comp>
-    <wire from="(110,140)" to="(110,150)"/>
-    <wire from="(130,140)" to="(130,160)"/>
+    <wire from="(110,140)" to="(110,160)"/>
+    <wire from="(110,160)" to="(160,160)"/>
+    <wire from="(120,180)" to="(120,200)"/>
+    <wire from="(120,180)" to="(130,180)"/>
+    <wire from="(120,60)" to="(120,80)"/>
+    <wire from="(120,80)" to="(160,80)"/>
+    <wire from="(130,140)" to="(130,180)"/>
     <wire from="(140,110)" to="(180,110)"/>
     <wire from="(140,130)" to="(180,130)"/>
+    <wire from="(160,80)" to="(160,160)"/>
     <wire from="(180,130)" to="(180,160)"/>
     <wire from="(180,160)" to="(200,160)"/>
     <wire from="(180,80)" to="(180,110)"/>
@@ -11737,13 +11781,9 @@
     <wire from="(60,120)" to="(100,120)"/>
     <wire from="(60,160)" to="(80,160)"/>
     <wire from="(60,80)" to="(80,80)"/>
-    <wire from="(80,110)" to="(90,110)"/>
+    <wire from="(80,110)" to="(100,110)"/>
     <wire from="(80,130)" to="(100,130)"/>
     <wire from="(80,130)" to="(80,160)"/>
-    <wire from="(80,160)" to="(130,160)"/>
     <wire from="(80,80)" to="(80,110)"/>
-    <wire from="(90,110)" to="(100,110)"/>
-    <wire from="(90,110)" to="(90,150)"/>
-    <wire from="(90,150)" to="(110,150)"/>
   </circuit>
 </project>
