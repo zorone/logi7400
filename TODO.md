@@ -1,5 +1,4 @@
 Normal
-HD74HC95
 SN74LS148
 
 VHDL
