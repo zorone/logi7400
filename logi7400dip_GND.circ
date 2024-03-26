@@ -2244,6 +2244,8 @@
       <text dominant-baseline="alphabetic" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="149" y="143">b</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="end" x="72" y="163">A</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="start" x="149" y="170">e</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="65" y="174">GND</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="end" x="154" y="103">Vcc</text>
       <circ-anchor facing="east" x="160" y="100"/>
       <circ-port dir="in" pin="150,230" x="60" y="160"/>
       <circ-port dir="in" pin="150,310" x="60" y="100"/>
