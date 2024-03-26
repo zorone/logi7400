@@ -1821,21 +1821,35 @@
     <a name="clabelfont" val="SansSerif plain 12"/>
     <a name="simulationFrequency" val="1.0"/>
     <appear>
-      <path d="M61,56 Q65,66 69,56" fill="none" stroke="#808080" stroke-width="2"/>
-      <rect fill="none" height="72" stroke="#000000" stroke-width="2" width="30" x="50" y="55"/>
-      <circ-anchor facing="east" x="80" y="60"/>
-      <circ-port dir="in" pin="60,100" x="50" y="90"/>
-      <circ-port dir="in" pin="60,140" x="50" y="100"/>
-      <circ-port dir="in" pin="60,180" x="80" y="110"/>
-      <circ-port dir="in" pin="60,20" x="50" y="60"/>
-      <circ-port dir="in" pin="60,220" x="80" y="100"/>
-      <circ-port dir="in" pin="60,260" x="80" y="80"/>
-      <circ-port dir="in" pin="60,300" x="80" y="70"/>
-      <circ-port dir="in" pin="60,60" x="50" y="70"/>
-      <circ-port dir="out" pin="160,120" x="50" y="110"/>
-      <circ-port dir="out" pin="160,200" x="80" y="120"/>
-      <circ-port dir="out" pin="160,280" x="80" y="90"/>
-      <circ-port dir="out" pin="160,40" x="50" y="80"/>
+      <text dominant-baseline="alphabetic" font-family="SansSerif" font-size="12" text-anchor="middle" x="170" y="73">DIP_7432</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="203" y="102">B4</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="203" y="112">A4</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="end" x="147" y="153">GND</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="125" y="133">B2</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="end" x="215" y="91">Vcc</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="125" y="123">A2</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="125" y="93">A1</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="125" y="103">B1</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="end" x="215" y="122">Y4</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="end" x="137" y="143">Y2</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="end" x="137" y="113">Y1</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="end" x="215" y="152">Y3</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="203" y="132">B3</text>
+      <rect fill="none" height="110" stroke="#000000" stroke-width="2" width="100" x="120" y="50"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="203" y="142">A3</text>
+      <circ-anchor facing="east" x="220" y="90"/>
+      <circ-port dir="in" pin="60,100" x="120" y="120"/>
+      <circ-port dir="in" pin="60,140" x="120" y="130"/>
+      <circ-port dir="in" pin="60,180" x="220" y="140"/>
+      <circ-port dir="in" pin="60,20" x="120" y="90"/>
+      <circ-port dir="in" pin="60,220" x="220" y="130"/>
+      <circ-port dir="in" pin="60,260" x="220" y="110"/>
+      <circ-port dir="in" pin="60,300" x="220" y="100"/>
+      <circ-port dir="in" pin="60,60" x="120" y="100"/>
+      <circ-port dir="out" pin="160,120" x="120" y="140"/>
+      <circ-port dir="out" pin="160,200" x="220" y="150"/>
+      <circ-port dir="out" pin="160,280" x="220" y="120"/>
+      <circ-port dir="out" pin="160,40" x="120" y="110"/>
     </appear>
     <comp lib="0" loc="(160,120)" name="Pin">
       <a name="appearance" val="classic"/>
